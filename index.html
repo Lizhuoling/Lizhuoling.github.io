@@ -94,11 +94,15 @@
     </p>
 
         <h4><li>MonoDDE: The best monocular 3D object detector on KITTI</li></h4>
-        <img style="width:96%;" src="images/MonoDDE_pipeline.png"> 
+        <img style="width:96%;" src="images/MonoDDE_pipeline.png">  <br>
         
 	In this work, we focus on the most essential challenge in monocular 3D object detection: how to estimate depth reliably based on only a single 
-	image. Through careful analysis, we point out that all existing monocular depth estimation methods rely on some prior assumptions, and these 
-	methods would fail if the corresponding assumptions collapse. To solve this problem, we develop a depth solving system
+	image. Through careful analysis, we point out that all existing monocular depth estimation methods are ill-posed and rely on some prior assumptions. 
+	These methods would fail if the corresponding assumptions collapse. To solve this problem, we develop a depth solving system that predicts multiple 
+	depth values for every object and a depth selection algorithm that selects reliable estimations from all predicted values. Since these values are 
+	derived based on different assumptions, the collapse of some assumptions does not fail the final depth estimation. Based on this method, our proposed
+	monocular 3D object detector (MonoDDE) ranks 1st on <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d">KITTI 3D object detection benchmark</a>
+	when it is submitted (2021.10.18). Outperforming all previous methods with large margins, MonoDDE maintains real-time efficiency (more than 25 FPS).
         </p> 
 
         <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
