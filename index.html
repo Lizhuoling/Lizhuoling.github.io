@@ -36,7 +36,6 @@
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">News</a>
     <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-    <a href="#recent_work" class="w3-bar-item w3-button">Recent Work</a>
     <a href="#publication" class="w3-bar-item w3-button">Publication</a>
   </div>
 </nav>
@@ -90,38 +89,6 @@ Vision-Centric Autonomous Driving Workshop.</li></p>
   	<p><li> 09/2020~Now, I was pursuing the Master degree in <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. During this period, I was advised academically by Prof. <a href="https://scholar.google.com/citations?user=eldgnIYAAAAJ">Haoqian Wang</a>. </li></p>
 	<p><li> 05/2021~11/2021, I was a full-time intern at the Autonomous Driving Group, <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>. </li></p>
 	<p><li> 12/2022~Now, I was a full-time intern at the Base Model Group, <a href="https://www.megvii.com/">MEGVII Technology</a>. </li></p>
-  </div>
-
-<!-- The Recent Work Section -->
-  <div class="w3-container w3-padding-32" id="recent_work">
-    <h2>Recent Work</h2>
-    <p class="w3-justify">
-        Recently, I mainly concentrate on the vision perception technique of autonomous driving and robot navigation, especially monocular 3D object detection and tracking.
-    </p>
-
-        <h4><li>MonoDDE: The best monocular 3D object detector on KITTI</li></h4>
-        <p class="w3-justify">
-	<img style="width:96%;" src="images/MonoDDE_pipeline.png">
-	In this work, we focus on the most essential challenge in monocular 3D object detection: how to estimate depth reliably based on only a single 
-	image. Through careful analysis, we point out that all existing monocular depth estimation methods are ill-posed and rely on some prior assumptions. 
-	These methods would fail if the corresponding assumptions collapse. To solve this problem, we develop a depth solving system that predicts multiple 
-	depth values for every object and a depth selection algorithm that selects reliable estimations from all predicted values. Since these values are 
-	derived based on different assumptions, the collapse of some assumptions does not fail the final depth estimation. Based on this method, our proposed
-	monocular 3D object detector (MonoDDE) ranks 1st on <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d">KITTI 3D object detection leaderboard</a>
-	when it is submitted (2021.10.18). Outperforming all previous methods by large margins, MonoDDE maintains real-time efficiency (more than 25FPS). This 
-	work has been accepted by CVPR2022 as an oral presentation.
-        </p> 
-
-        <h4><li>MTrack: Exploring information in whole trajectories for multi-object tracking</li></h4>
-        <p class="w3-justify">
-	<img style="width:96%;" src="images/MTrack_pipeline.png">
-	Discriminative representation is crucial for the association step in multi-object tracking. Previous methods mainly use the information in neighboring 
-	frames to learn representation and fail to exploit the knowledge in whole trajectories. In this work, we propose a method, namely multi-view trajectory 
-	contrastive learning, in which each trajectory is represented as a center vector. By maintaining all the vectors in a dynamically updated memory bank, 
-	a trajectory-level contrastive loss is devised to explore the inter-frame information in the whole trajectories. Besides, in this strategy, each target
-	is represented as multiple adaptively selected keypoints rather than a pre-defined anchor or center like previous works. This design provides more 
-	information for generating representations and is helpful for tracking occluded objects. This work has been accepted by CVPR2022.
-        </p> 
   </div>
   
  <!-- The Publications Section -->
